@@ -1,0 +1,11 @@
+body{background: url("../img/hr.jpeg") no-repeat center center ;
+   padding-top: 90px;  }
+#container{position: relative; margin: 0 auto; width: 80%; height: 440px; background-color: rgba(255, 255, 255, 0.9);
+    padding-bottom: 30px; border-radius: 5px; box-shadow: 5px 5px 5px;  }
+h3{padding-top: 30px; margin-left: 30px}
+h4{display:inline-block; padding-right: 15px; padding-bottom: 10px;margin: 0; width: 75px; text-align: right;}
+#addBtn{cursor:pointer;line-height: 1.2em;color:blueviolet;margin-left:30px;}
+table{margin-left: 30px; margin-right: 30px; width:90%;  border: 1px solid papayawhip; box-sizing: border-box;}
+tr:nth-child(odd){background-color: gainsboro; box-sizing: border-box;}
+th{text-align: left;}
+#pager{position: absolute; bottom: 10px; right: 40px;}

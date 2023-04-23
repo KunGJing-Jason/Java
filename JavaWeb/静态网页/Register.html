@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册管理员</title>
+    <link href="css/Register.css" rel="stylesheet">
+</head>
+<body>
+<div id="container">
+    <h3>管理员注册 <span id="msg"></span></h3>
+    <form action="register" method="post">
+        <h4>账号</h4><input name="uname"><br>
+        <h4>真实姓名</h4><input name="utruename"><br>
+        <h4>密码</h4><input name="upwd" type="password"><br>
+        <h4>密码确认</h4><input name="confirmPwd" type="password"><br>
+        <h4></h4><button id="register" ><span>注 册</span></button> <br>
+        <span id="notes" >（超管可注册管理员,协助管理本系统）</span>
+    </form>
+</div>
+</body>
+</html>

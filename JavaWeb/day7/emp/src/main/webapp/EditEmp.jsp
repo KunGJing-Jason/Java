@@ -1,0 +1,46 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: 32183
+  Date: 2023/4/17
+  Time: 13:02
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>员工管理</title>
+    <link href="css/EditEmp.css" rel="stylesheet">
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div id="container">
+    <h3>编辑员工</h3>
+    <form action="Emp.html" method="post" enctype="multipart/form-data">
+        <div id="leftContent">
+            <h4>姓名</h4><input name="ename" value="张珊"><br>
+            <h4>性别</h4><input type="radio" name="esex" value="男" >男
+            <input type="radio" name="esex" value="女" checked>女<br>
+            <h4>生日</h4><input name="ebirth" type="date" value='2000-04-30' ><br>
+            <h4>部门</h4><select name="dept_id">
+            <option value="0">请选择</option>
+            <option value="1" selected>销售部</option>
+            <option value="2" >人事部</option>
+            <option value="3" >研发部</option>
+        </select><br>  <input type="hidden" name="id" value="1">
+            <h4></h4><button id="edit" type="submit"><span>确定</span></button><br>
+        </div>
+        <div id="rightContent">
+            <img id="photoImg" src="photo/avatar20.png"><br>
+            <input id="photo" name="photo" type="file">
+            <script>
+                $("#photo").change(function(){
+                    $("#photoImg").attr("src",URL.createObjectURL($(this)[0].files[0]));
+                });
+            </script>
+        </div>
+    </form>
+</div>
+</body>
+</html>

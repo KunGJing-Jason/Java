@@ -1,0 +1,10 @@
+body{background: url("../img/hr.jpeg") no-repeat; background-size: 100%; padding-top: 120px;}
+#container{ margin: 0 auto; width: 350px; min-height: 80%; background-color: azure;
+    padding-bottom: 30px; border-radius: 5px; box-shadow: 5px 5px 5px;  }
+h3{padding-top: 30px;margin-left: 30px}
+h4{display:inline-block; padding-right: 15px; padding-bottom: 10px;margin: 0; width: 75px;}
+form{margin-left: 30px; width:100%;}
+button#add{width: 178px; display: inline-block;}
+form button span{font-size: 1.2em;}
+
+#msg{color: red;}

@@ -1,0 +1,13 @@
+body{background: url("../img/hr.jpeg") no-repeat; padding-top: 120px;}
+#container{ margin: 0 auto; width: 500px; height: 250px; background-color: azure;
+    padding-bottom: 30px; border-radius: 5px; box-shadow: 5px 5px 5px;  }
+h3{padding-top: 30px;margin-left: 30px}
+h4{display:inline-block; padding-right: 15px; padding-bottom: 10px;margin: 0; width: 75px;}
+form{margin-left: 30px; width:100%;}
+button#edit{width: 178px; display: inline-block;}
+form button span{font-size: 1.2em;}
+input,select{margin:3px;padding:3px; border: 1px gray solid; width: 150px; height: 25px;box-sizing: border-box;}
+input[type="radio"]{ width: 45px; height: 25px; line-height: 25px;vertical-align:middle;}
+#leftContent,#rightContent{float:left;}
+#photoImg{width: 95px; height: 95px;}
+#photo{width: 115px;}

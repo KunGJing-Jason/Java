@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link href="css/Login.css" rel="stylesheet">
+    <script type="text/javascript">
+        function chgImg(){//刷新验证码
+            document.getElementById("imgCode").src="imgCode?"+Math.random();
+        }
+    </script>
+</head>
+<body>
+<div id="container">
+    <h3>用户登录  <span id="msg">请先登录</span></h3>
+    <form action="login" method="post">
+        <h4>账号</h4><input name="ename" type="text"><br>
+        <h4>密码</h4><input name="epwd" type="password"><br>
+        <h4>验证码</h4><img id="imgCode"  src="img/imgCode.jpg" onclick="chgImg()">
+        <a href="javascript:void(0)" onclick="chgImg()">看不清，换一张</a><br>
+        <h4>&nbsp;</h4><input name="vcode" type="text">
+        <h4> </h4><button id="login" type="submit"><span>登 录</span></button><br>
+    </form>
+</div>
+</body>
+</html>
